@@ -1,0 +1,57 @@
+.topnav {
+  overflow: hidden;
+  background-color: #eac1b8 ;
+  font-weight: bold;
+  max-width: 15%;
+  border-radius: 05%
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active,
+a:hover {
+  color: #110808;
+}
+
+.topnav:hover {
+  background-color: #ffb366;
+}
+
+body{
+  background-color: #845854;
+  font-family: "Times New Roman",sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+h2{
+  font-family: "Times New Roman",sans-serif,monospace;
+  font-size: 400%;
+  color: black;
+  text-align: center;
+}
+#searchP{
+  padding:50px;
+
+}
+
+
+#searchBar{
+  width: 400px;
+}
+section{
+  text-align:left;
+width:40%;
+margin: auto;
+}
+
+

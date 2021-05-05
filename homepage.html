@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="Mauricio Barera">
+  <meta name="description" content="A book review search interface">
+    <title>bR Homepage</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+   <link rel="stylesheet" href="beReadingstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+<!--navigation bar -->
+<div class ="topnav">
+  <a href="homepage.html">brHome</a>
+</div>
+
+<!--header -->
+<h2>beReading</h2>
+<p class="home">beReading, search book titles and enjoy reading.</p>
+
+<section> Keep in mind when using the search bar <ul>
+  <li><ins>Recommended method</ins>: enter 10- or 13-digit ISBNs or</li>
+  <li>Enter full title of the book.</li>
+  <li>Enter the author’s first and last name, separated by a space.</li>
+</ul>
+</section>
+
+
+<!-- book example Concrete Rose, Angie Thomas, ISBN-10 : 006284671X
+ISBN-13 : 978-0062846716 -->
+
+
+<!-- search bar -->
+<div id="searchP">
+  <input type = "text" name ="searchBar" id="searchISBN" placeholder="Enter ISBN" /> <br>
+  <input type = "text" name ="searchBar" id="searchTitle" placeholder="Enter full Book title" /> <br>
+  <input type = "text" name ="searchBar" id="searchAuthor" placeholder="Enter full author name" /> <br>
+  <button onclick="execute()"> Submit</button>
+</div>
+
+<div id='searchResults'></div>
+
+
+
+
+
+</body>
+</html>
