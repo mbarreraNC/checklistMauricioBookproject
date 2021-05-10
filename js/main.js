@@ -22,29 +22,17 @@ function execute() {
     contentType: 'text/plain',
     data: jsonObj[0],
     success: function(data) {
-      console.log(data);
+     // console.log(data);
+
+      data.results.forEach(myFunction);
+
+      function myFunction(item, index) {
 
 
-      var stringIt = JSON.stringify(data);
-      var myArr = JSON.parse(stringIt);
-      //var i,x = "";
+        document.getElementById("searchResults").innerHTML += "Book result #"+index + " The author of the book " + item.book_author+
+          " and the title of the book is '" + item.book_title +"'. The summary of the book is "+ item.summary+ "."+"<br>"
+              }
 
-      console.log(myArr.results.length);
-
-      //for(i=0; i<myArr.results.length;i++)
-      const booklist = {bookTitle: myArr.results[0].book_title, bookAuthor: myArr.results[0].book_author, bookSum: myArr.results[0].summary};
-
-      console.log(booklist);
-     /* myArrList();
-      function myArrList(){
-        for(i = 0; i<myArr.results.length; i++){
-          booklistAdd.push(myArr.results[i].book_title,myArr.results[i].book_author, myArr.results[i].summary, myArr.results[i].url);
-        }
-        booklist = booklist+booklistAdd;
-      }
-
-        console.log(booklist);
-    */
     },
 
     error:function (){
@@ -52,3 +40,5 @@ function execute() {
     }
   });
 }
+
+
